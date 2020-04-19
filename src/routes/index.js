@@ -7,5 +7,8 @@ const routes = [{
     {
     path:"/",
     redirect:"/tree"
+},{
+    path:'/drag',
+    component:()=>import('@/features/drag')
 }]
 export default routes
