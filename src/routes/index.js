@@ -1,14 +1,13 @@
-
-const routes = [{
-    path:"/tree",
-    name:"tree",
-    component:()=>import('@/components/tree')
-},
+const routes = [
     {
-    path:"/",
-    redirect:"/tree"
-},{
-    path:'/drag',
-    component:()=>import('@/features/drag')
-}]
+        path: '/button',
+        component: () => import('@/components/dl-button')
+    },
+    {
+        path: "",
+        redirect: "/button"
+    }, {
+        path: '/drag',
+        component: () => import('@/features/drag')
+    }]
 export default routes
