@@ -8,6 +8,7 @@
       <img width="100" src="https://static.zhihu.com/heifetz/assets/guide-cover-5.2b2adaeb.jpg" alt="">
 
       </p>
+      
       <p draggable ondragstart="event.dataTransfer.setData('text/plain','hello world')">测试</p>
       <div class="drop-area">
 

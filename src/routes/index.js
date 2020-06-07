@@ -1,7 +1,11 @@
 const routes = [
     {
         path: '/button',
-        component: () => import('@/components/dl-button')
+        component: () => import('@/components/button/example')
+    },
+    {
+        path: '/loading',
+        component: () => import('@/components/loading/example')
     },
     {
         path: "",

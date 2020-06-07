@@ -13,7 +13,10 @@ autofocus    是否默认聚焦    boolean    —    false
 native-type    原生 type 属性    string    button / submit / reset    button
 **/
 <template>
-    <p v-demo:one="btn">测试</p>
+<button v-loading="true" id="btn" >
+    测试
+</button>
+  
 </template>
 
 <script>
@@ -36,10 +39,30 @@ native-type    原生 type 属性    string    button / submit / reset    button
         },
         mounted() {
         },
-        methods: {}
+        beforeDestroy(){
+
+        },
+        methods: {
+
+        }
     }
 </script>
 
-<style lang="less" scoped>
-
+<style lang="scss" >
+    .dl-buton{
+        
+    }
+    .is-loading{
+        position: relative;
+        pointer-events: none;
+        &:before{
+            content:'';
+            position:absolute;
+            left: -1px;
+            right: -1px;
+            top: -1px;
+            bottom: -1px;
+            background-color: hsla(0,0%,100%,.35);
+        }
+    }
 </style>
